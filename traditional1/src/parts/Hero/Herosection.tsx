@@ -4,12 +4,12 @@ import S from './HeroStyle.module.css';
 
 const Herosection = () => {
   return (
-    <section id={S.HeroSection}>
+    <section id={S.HeroSection} aria-labelledby="hero-title">
       <div className={S.heroBackground}>
         <img className={S.king} src={king} alt="" />
 
         <div className={S.heroText}>
-          <h1>왕실 유물 아카이브</h1>
+          <h1 id="hero-title">왕실 유물 아카이브</h1>
           <a className={S.linkButton} href="#">
             <div className={S.waveEffect}></div>
             <span>검색하러 바로가기</span>

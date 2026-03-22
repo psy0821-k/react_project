@@ -22,7 +22,10 @@
 
 .king {
   position: absolute;
-  bottom: -50%;
+  bottom: 0%;
+  width: 100%;
+  min-width: 500px;
+  max-width: 800px;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -102,11 +105,27 @@
 .linkButton:focus-visible {
   outline: 3px solid #f2d569;
 }
+
 @media (max-width: 768px) {
   .heroText {
     h1 {
       font-size: 3em;
     }
+  }
+}
+
+@media (max-width: 362px) {
+  .heroText {
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .linkButton {
+    font-size: 1rem;
   }
 }
 
