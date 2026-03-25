@@ -1,6 +1,7 @@
 .textIntroContainer {
-  width: 100%;
+  width: 80%;
   height: 674px;
+  margin: 0 auto;
   font-size: 1.5rem;
   background-color: black;
   color: #fff;
@@ -11,4 +12,10 @@
   align-self: center;
   justify-content: center;
   gap: 0.5em;
+}
+
+@media (max-width: 640px) {
+  .textIntroContainer {
+    font-size: 1rem;
+  }
 }

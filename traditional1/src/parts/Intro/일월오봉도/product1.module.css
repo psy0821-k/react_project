@@ -1,0 +1,55 @@
+.product1Container {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  margin-inline: auto;
+  background-color: #2121ad;
+  overflow: hidden;
+
+  .sunAndMoon {
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .sun,
+  .moon {
+    width: clamp(2.5rem, 6vw, 10rem);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .sun {
+    background-color: #ea1e14;
+  }
+
+  .moon {
+    background-color: #fbf3ed;
+  }
+
+  .sea,
+  .tree,
+  .mountian {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .tree,
+  .sea {
+    z-index: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .product1Container {
+    height: auto;
+    aspect-ratio: 4/3;
+  }
+}
