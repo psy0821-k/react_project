@@ -1,0 +1,31 @@
+/* 전체 페이지 */
+
+/* Canvas 영역 */
+.canvasWrapper {
+  width: 80%;
+  min-height: 674px;
+  margin-inline: auto;
+  height: 100vh;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  overflow: hidden;
+  position: relative;
+}
+
+/* 캔버스 */
+canvas {
+  display: block;
+}
+
+/* 텍스트 UI (옵션) */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 182);
+  width: clamp(254px, 100%, 600px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  text-align: center;
+  pointer-events: none;
+}
